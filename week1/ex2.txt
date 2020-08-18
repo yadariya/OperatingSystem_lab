@@ -1,0 +1,72 @@
+    1  mkdir ~/week1
+    2  cd ~/week1
+    3  mkdir ~/week1
+    4  cd ~/week1
+    5  whoami
+    6  rm -r <week1>
+    7  mkdir
+    8  pwd
+    9  ls
+   10  .
+   11  cd ~
+   12  ls.
+   13  ls .
+   14  cd ..
+   15  is
+   16  ls
+   17  bin ls
+   18  bin
+   19  ls /usr/bin
+   20  ls | sort -r | /usr/bin 
+   21  ls /usr/bin | sort -r 
+   22  ls /usr/bin | sort -r | grep ggc <week1>
+   23  ls /usr/bin | sort -r | grep "ggc" <bin>
+   24  ls /usr/bin |sort -r | grep "gcc" <bin>
+   25  ls /usr/bin | sort -r | grep gcc <bin>
+   26  ls /usr/bin | sort -r | grep GCC <bin>
+   27  ls grep gcc <bin> | sort -r 
+   28  ls grep GCC /usr/bin | sort -r
+   29  ls /usr/bin | sort -r | grep gcc /usr/bin
+   30  ls /usr/bin | sort -r| grep gcc bin
+   31  ls /usr/bin
+   32  ls /usr/bin | sort -r
+   33  ls /usr/bin | sort -r | grep gcc
+   34  sudo apt install gcc
+   35  ls /usr/bin | sort -r | grep gcc
+   36  ls > “~/week1/ex1.txt”
+   37  ls > ~/week1/ex1.txt
+   38  ls /usr/bin | sort -r | grep gcc
+   39  ls /usr/bin | sort -r | grep gcc > ~/week1/ex1.txt
+   40  ls ~/week1/
+   41  git
+   42  ls
+   43  cd ~
+   44  ls
+   45  mkdir OS
+   46  mv week1/OS
+   47  mv week1 OS
+   48  ls
+   49  cd OS
+   50  ls
+   51  git remote origin https://github.com/yadariya/innopolisuniversityOS.git
+   52  git remote add origin https://github.com/yadariya/innopolisuniversityOS.git
+   53  git init
+   54  git remote add origin https://github.com/yadariya/innopolisuniversityOS.git
+   55  git status
+   56  git add week1/
+   57  git status
+   58  git commit -m "Solved ex1"
+   59  man git
+   60  man git-push
+   61  git push origin master
+   62  ls /user/lib
+   63  ls /usr/lib
+   64  ls /usr/lib32
+   65  ls /usr/lib64
+   66  ls /usr/libx32
+   67  pwd
+   68  cd ~
+   69  ~
+   70  history > ex2.txt
+   71  ex2.txt
+   72  history > ex2.txt
