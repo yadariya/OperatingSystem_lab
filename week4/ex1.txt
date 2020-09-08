@@ -1,4 +1,6 @@
-Scheduler doesn't have strict rules on what processes how many times run, it picks and runs processes randomly. Each instruction in the process run sequentially. The parent process and child process have different pids. 
+Scheduler doesn't have strict rules on what processes how many times run, it picks and runs processes randomly. 
+Each instruction in the process run sequentially. 
+The parent process and child process have different pids. 
 
 Example of my output:
 
