@@ -1,0 +1,8 @@
+First time with calling fork() 3 times I saw 8 processes. 
+The number of processors at the end equals two in the power of forks number, 2^3=8
+
+Second time with calling fork() 5 times I saw 32 processes. 
+The number of processors at the end equals two in the power of forks number, 2^5=32
+
+
+
