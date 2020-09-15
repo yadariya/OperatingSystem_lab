@@ -3,6 +3,8 @@
 #include <unistd.h>
 #include <pthread.h>
 
+/* Firstly we create first thread using pthread_create. Then first thread prints message about creation.
+After it send us message from ThreadFun function. Then it finished work and turn go to second thread and so on. */
 int k = 0;
 
 // The function to be executed by all threads
@@ -22,6 +24,5 @@ int main() {
         pthread_join(thread[i], NULL);
         k++;
     }
-
     return 0;
 }
