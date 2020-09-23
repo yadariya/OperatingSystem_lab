@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <limits.h>
 
+/** Here I assume that all processes come with sorted arrival time */
+
 int clock = 0;
 int ATT = 0;
 int AWT = 0;
@@ -8,10 +10,10 @@ int AWT = 0;
 /** function for finding row-index of smallest element of array, k is number of rows */
 int min_index(int arr[][4], int k) {
     int min_number, index = 0;
-    min_number = arr[0][2];
+    min_number = arr[0][3];
     for (int i = 1; i < k; i++) {
-        if (arr[i][2] < min_number) {
-            min_number = arr[i][2];
+        if (arr[i][3] < min_number) {
+            min_number = arr[i][3];
             index = i;
         }
     }
@@ -22,6 +24,8 @@ int min_index(int arr[][4], int k) {
 // 1-process   |     |    |     |
 //  ...        |     |    |     |
 // n-th process|     |    |     |
+
+/** Scheduling starts at time moment t=1*/
 
 int main() {
     int n = 3; //number of processors
@@ -46,7 +50,7 @@ int main() {
             brr[minIndex][1] = 0;
             AWT += brr[minIndex][1];// average waiting time
             ATT += brr[minIndex][0];// average turnaround time
-            clock += brr[minIndex][3];;
+            clock += brr[minIndex][3];
         } else {
             if (clock - brr[minIndex][2] < 0) { brr[minIndex][1] = 0; }
             else { brr[minIndex][1] = clock - brr[minIndex][2] + 1; }//waiting
@@ -56,7 +60,7 @@ int main() {
             clock += brr[minIndex][3];
         }
         printf("The %d process is executing \n", minIndex + 1);
-        arr[minIndex][2] = INT_MAX;
+        arr[minIndex][3] = INT_MAX;
     }
     printf("            TAT | WT | AT  | BT\n");
     for (int i = 0; i < n; i++) {
