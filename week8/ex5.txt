@@ -1,0 +1,3 @@
+Virtual addresses (VA) refer to the virtual store viewed by the process.
+Physical addresses (PhysA) is real. PhysA refers to hardware addresses of physical memory.
+If VA is the same as PhysA no mapping is needed, but if it is not VA must be mapped with PhysA by MMU (Memory Management Unit).

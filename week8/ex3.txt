@@ -1,0 +1,47 @@
+When I am running top -d 1 I have
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  
+  10217 dariya    20   0 7559380 342604 129908 S  41,6   4,8  10:25.38 zoom     
+   1323 dariya     9 -11 1932916  15928  11488 S   7,9   0,2  14:03.34 pulseau+ 
+   1001 root      20   0 1595516 132788  83776 S   3,0   1,9  10:42.62 Xorg     
+   5490 dariya    20   0  711252 261580 134732 S   2,0   3,7   1:17.53 chrome   
+    248 root      -2   0       0      0      0 S   1,0   0,0   1:14.18 gfx      
+    507 root     -51   0       0      0      0 S   1,0   0,0   1:13.39 irq/52-+ 
+   5648 dariya    20   0 4728292 185372  77124 S   1,0   2,6   0:16.55 chrome   
+  11482 root      20   0       0      0      0 I   1,0   0,0   0:00.47 kworker+ 
+  11748 root       0 -20       0      0      0 I   1,0   0,0   0:00.12 kworker+ 
+  11787 dariya    20   0   11980   3852   3092 R   1,0   0,1   0:00.08 top      
+      1 root      20   0  168048  11824   8328 S   0,0   0,2   0:01.88 systemd  
+      2 root      20   0       0      0      0 S   0,0   0,0   0:00.01 kthreadd 
+      3 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 rcu_gp   
+      4 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 rcu_par+ 
+      6 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker+ 
+      9 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 mm_perc+ 
+     10 root      20   0       0      0      0 S   0,0   0,0   0:00.43 ksoftir+
+
+When I am running ./ex2 & top -d 1 I have
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                                                                                          
+  10217 dariya    20   0 7560840 347436 129908 S  43,1   4,9  12:05.68 zoom                                                                                                                                                                   
+   1323 dariya     9 -11 1932916  17260  12820 R   8,8   0,2  14:24.63 pulseaudio                                                                                                                                                             
+   1001 root      20   0 1595516 132788  83776 S   2,9   1,9  10:52.31 Xorg                                                                                                                                                                   
+    248 root      -2   0       0      0      0 S   1,0   0,0   1:15.52 gfx                                                                                                                                                                    
+    507 root     -51   0       0      0      0 S   1,0   0,0   1:14.84 irq/52-iwlwifi                                                                                                                                                         
+   7739 root       0 -20       0      0      0 I   1,0   0,0   0:08.98 kworker/u33:1-uvcvideo                                                                                                                                                 
+  11773 dariya    20   0  462192  39296  29916 S   1,0   0,6   0:01.71 gnome-terminal-                                                                                                                                                        
+  11881 dariya    20   0   11996   3928   3100 R   1,0   0,1   0:00.02 top                                                                                                                                                                    
+      1 root      20   0  168048  11824   8328 S   0,0   0,2   0:01.88 systemd                                                                                                                                                                
+      2 root      20   0       0      0      0 S   0,0   0,0   0:00.01 kthreadd                                                                                                                                                               
+      3 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 rcu_gp                                                                                                                                                                 
+      4 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 rcu_par_gp                                                                                                                                                             
+      6 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 kworker/0:0H-kblockd                                                                                                                                                   
+      9 root       0 -20       0      0      0 I   0,0   0,0   0:00.00 mm_percpu_wq                                                                                                                                                           
+     10 root      20   0       0      0      0 S   0,0   0,0   0:00.44 ksoftirqd/0                                                                                                                                                            
+     11 root      20   0       0      0      0 I   0,0   0,0   0:13.82 rcu_sched                                                                                                                                                              
+     12 root      rt   0       0      0      0 S   0,0   0,0   0:00.04 migration/0                                                                                                                                                            
+     13 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/0                                                                                                                                                          
+     14 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/0                                                                                                                                                                
+     15 root      20   0       0      0      0 S   0,0   0,0   0:00.00 cpuhp/1                                                                                                                                                                
+     16 root     -51   0       0      0      0 S   0,0   0,0   0:00.00 idle_inject/1                                                                                                                                                          
+     17 root      rt   0       0      0      0 S   0,0   0,0   0:00.17 migration/1                                                                                                                                                            
+     18 root      20   0       0      0      0 S   0,0   0,0   0:00.85 ksoftirqd/1 

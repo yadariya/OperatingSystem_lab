@@ -1,0 +1,4 @@
+VA 16-bit
+Pages 8 KB = 1024 * 8 = 8192 
+Number of VA= 2^16
+Number of page entries = 2^16 / 8192 = 2^16 / 2^13 = 2^3 = 8
