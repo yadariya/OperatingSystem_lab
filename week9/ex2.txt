@@ -1,0 +1,9 @@
+Hit/Miss ratio will increase if the number of hits will increase and the number of misses will decrease. To increase the number of hits we cab reference the same page every time. Let us assume we have 1000 pages as in the example from task 1 and page number 0,0,...0 thousand times. In that case number of hits will be 999 and the number of misses will be 1. The only one-page fault will occur at the beginning. The ration will be 999.0
+Miss 1
+Hit 999
+Ratio o hit/miss  999
+
+Hit/Miss ratio will decrease if the number of hits will decrease and the number of misses will increase. To decrease the number of hits we can reference the different pages every time without repetitions. Let us assume we have 1000 pages as in the example from task 1 and page number 1,2,...1000. In that case number of hits will be 0 and the number of misses will be 1000.  The ration will be 0
+Miss 0
+Hit 1000
+Ratio o hit/miss  0
