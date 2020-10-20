@@ -1,0 +1,16 @@
+1. Command link /home/dariya/innopolisuniversityOS/week1/file.txt _ex2.txt
+ 
+/* no output */
+
+ls -i _ex2.txt /* for second command*/
+
+/* output: 267637 _ex2.txt */
+
+2. Command find /home/dariya/innopolisuniversityOS/week1/file.txt -inum 267637
+
+/* output:/home/dariya/innopolisuniversityOS/week1/file.txt */
+
+3.Command find /home/dariya/innopolisuniversityOS/week1/file.txt -inum 267637 -exec rm {} \;
+
+/* no output */
+

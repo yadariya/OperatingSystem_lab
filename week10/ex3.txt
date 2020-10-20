@@ -1,0 +1,12 @@
+chmod a-x _ex3.txt
+/*no output*/
+
+chmod uo+rwx _ex3.txt
+/*no output*/
+
+chmod g-rwx _ex3.txt
+/*no output */
+
+660 means 6 for user (read+write permissions), 6 for group (read+write permissions), 6 for others (no prenissions)
+775 means 7 for user (read+write+execute permissions), 7 for group (read+write+execute permissions), 5 for others (read+execute permissions)
+777 means 7 for user (read+write+execute permissions), 7 for group (read+write+execute permissions), 7 for others (read+write+execute permissions)
