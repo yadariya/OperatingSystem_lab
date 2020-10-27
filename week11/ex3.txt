@@ -1,0 +1,27 @@
+int main(void) {
+    printf("Hello");
+    fork();
+    printf("\n");
+    return 0;
+}
+
+output: 
+Hello
+Hello
+
+Explanation: In this case buffer is not flashed before process forks (buffer conatains "Hello" at the time fork occurs)
+
+int main(void) {
+    printf("Hello\n");
+    fork();
+    printf("\n");
+    return 0;
+}
+
+output:
+Hello
+
+
+
+
+Explanation: In this case buffer is already flashed before process forks
