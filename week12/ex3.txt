@@ -1,0 +1,39 @@
+time ./copy fileA fileB
+
+Before including SYNC_O
+
+For BUF_SIZE 1024
+real	0m0,002s
+user	0m0,002s
+sys	    0m0,000s
+
+For BUF_SIZE 65536
+real	0m0,002s
+user	0m0,001s
+sys	    0m0,000s
+
+For BUF_SIZE 2
+real	0m0,001s
+user	0m0,001s
+sys	    0m0,000s
+
+
+After including SYNC_O
+
+For BUF_SIZE 1024
+real	0m0,002s
+user	0m0,002s
+sys 	0m0,000s
+
+For BUF_SIZE 65536
+real	0m0,001s
+user	0m0,000s
+sys 	0m0,001s
+
+For BUF_SIZE 2
+real	0m0,002s
+user	0m0,000s
+sys 	0m0,002s
+
+The difference between results before and after including SYNC_O is small. 
+The difference between results with distinct BUF_SIZE is also small. 
