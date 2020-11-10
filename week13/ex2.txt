@@ -1,0 +1,4 @@
+Avoidance can be used when we know the number of resources in advance. 
+Recovery via killing can be used when we know that it is safe to kill the process and other processes don't depend on the killed process
+Recovery via preemption is good then we sure that process will preempt resources in a safe way
+Prevention can be used when we sure that no of this one holds: mutual exclusion, hold and wait, no preemption, circular wait. 
